@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Daniel Atebije</title>
 </head>
 <body>
@@ -20,13 +19,12 @@
             <li class="nav-links active" id="nav-home"><a href="#home">Home</a></li>
             <li class="nav-links" id="nav-about"><a href="#about">About</a></li>
             <li class="nav-links" id="nav-skills"><a href="#skills">Skills</a></li>
-            <li class="nav-links" id="nav-experience"><a href="#experience">Experiences</a></li>
             <li class="nav-links" id="nav-portfolio"><a href="#portfolio">Portfolio</a></li>
             <li class="nav-links" id="nav-contact"><a href="#contact">Contact</a></li>
         </ul>
     </header>
 
-    <div class="content">
+    <div class="content" id="content-wrapper">
         <div id="home" class="section">
             <div id="details">
                 <div id="hello"> <span> Hello, I'm</span></div>
@@ -69,6 +67,7 @@
                         <div class="tool">Javascript</div>
                         <div class="tool">PHP</div>
                         <div class="tool">React</div>
+                        <div class="tool">React-Native</div>
                         <div class="tool">Node.JS</div>
                         <div class="tool">Angular 2^</div>
                         <div class="tool">MySQL</div>
@@ -76,24 +75,118 @@
                         <div class="tool">Firebase</div>
                         <div class="tool">MongoDb</div>
                     </div>
-
-
                 </div>
             </div>
         </div>
+
+        <div id="skills" class="section">
+            <h1 style="text-align: center;">Skills</h1>
+            <div id="skills-container">
+                <div id="tech-skills">
+                    <h3>Top Tech Skills</h2>
+    
+                    <div class="skill-wrapper">
+                        <div class="skill-labels">
+                            <span id="skill-name">Javascript</span>
+                            <span>80%</span>
+                        </div>
+                        <progress max="100" value="80"></progress> 
+                    </div>
+
+                    <div class="skill-wrapper">
+                        <div class="skill-labels">
+                            <span id="skill-name">PHP</span>
+                            <span>68%</span>
+                        </div>
+                        <progress max="100" value="68"></progress> 
+                    </div>
+                    <h3>Stack & Tools</h3>
+
+                    <div class="skill-wrapper">
+                        <div class="skill-labels">
+                            <span id="skill-name">Node</span>
+                            <span>85%</span>
+                        </div>
+                        <progress max="100" value="85"></progress> 
+                    </div>
+
+                    <div class="skill-wrapper">
+                        <div class="skill-labels">
+                            <span id="skill-name">React</span>
+                            <span>75%</span>
+                        </div>
+                        <progress max="100" value="75"></progress> 
+                    </div>
+
+                    <div class="skill-wrapper">
+                        <div class="skill-labels">
+                            <span id="skill-name">Angular 2^</span>
+                            <span>55%</span>
+                        </div>
+                        <progress max="100" value="55"></progress> 
+                    </div>
+                    <div class="skill-wrapper">
+                        <div class="skill-labels">
+                            <span id="skill-name">Lumen</span>
+                            <span>45%</span>
+                        </div>
+                        <progress max="100" value="45"></progress> 
+                    </div>
+                    <div class="skill-wrapper">
+                        <div class="skill-labels">
+                            <span id="skill-name">React-Native</span>
+                            <span>40%</span>
+                        </div>
+                        <progress max="100" value="40"></progress> 
+                    </div>
+
+                </div>
+    
+                <div id="soft-skills">
+                    <h3>Soft Skills</h3>
+                    <div class="soft-skills-wrapper">
+                        <div class="soft-skill">
+                            <div class="round"
+                                data-value="0.87"
+                                data-size="200"
+                                data-thickness="6">
+                                <strong></strong>
+                            </div>
+                            <span style="text-align: center;">Attention to Details</span>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="round"
+                                data-value="0.85"
+                                data-size="200"
+                                data-thickness="6">
+                                <strong></strong>
+                            </div>
+                            <span style="text-align: center;">Team work</span>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="round"
+                                data-value="0.90"
+                                data-size="200"
+                                data-thickness="6">
+                                <strong></strong>
+                            </div>
+                            <span style="text-align: center;">Communication</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
 
 
-
-
-
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js'></script>
 
 
 
     <script>
-
         /** 
          * JAVASCRIPT METHOD FOR SETTING ACTIVE
          * NAV LINK ELEMENT
@@ -109,6 +202,33 @@
                     });
                 }
             })();
+
+        /* Code By Webdevtrick ( https://webdevtrick.com ) 
+        *  JS for Circular range
+        */
+        (function (){
+        $('.round').circleProgress({fill: {color: '#6b63ff'}})
+            .on('circle-animation-progress', function(event, progress, stepValue){
+                $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2)+'%');
+                });  
+        })();
+       /*
+       * close hambugger menu
+       */ 
+        (function(){
+            const everywhere= document.getElementById('content-wrapper');
+            const except = document.getElementsByTagName('header');
+            const hambugger = document.getElementById('hamburger');
+            const windowWidth = $(window).width();
+
+            $('input:checkbox').change(function () {
+                if(hambugger.checked && (windowWidth < 600)) {
+                everywhere.addEventListener('click', function(ev) {
+                    hambugger.checked = false;
+                }, false);
+                }
+            });
+        })();
 
 
     /** 
