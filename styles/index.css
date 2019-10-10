@@ -1,0 +1,378 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+.content {
+    margin: 0 55px;
+}
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    /* width: 100%; */
+    margin-top: 0;
+    overflow: hidden;
+    padding: 20px 5px;
+    background: white;
+}
+header label, #hamburger {
+    display: none;
+  }
+
+.nav-links {
+    cursor: pointer;
+    padding: 5px 0;
+    margin:0 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+}
+.active {
+    border-bottom: 2px solid;
+}
+.section {
+    height: 600px;
+    /* padding: 0 5%; */
+}
+#home {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+#details {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+#hello {
+    margin-left: 10px;
+    font-size: 1em;
+    margin-bottom: 5%;
+}
+#hello span {
+    /* background-color:#52f5be; */
+    background-color:#6b63ff;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+    margin-bottom: 5%;
+}
+#title {
+    display: flex;
+    flex-direction: column;
+}
+#name {
+    font-size: 3.5em;
+    font-weight: 700;
+}
+#occupation {
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-top: 10px;
+}
+.detail {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 0.8em;
+    display: flex;
+}
+.detail-val {
+    margin-left: 10px;
+}
+.contact-details {
+}
+/**
+* ABOUT SECTION CSS
+*/
+
+#about {
+    /* padding-left: 10%; */
+}
+#about-me-details {
+    margin-left: 2em;
+}
+#about-me-wrapper {
+    display: flex;
+}
+#svg-wrapper {
+    /* width: 50%; */
+}
+#coder {
+    width: 90%;
+}
+#about-me {
+    line-height: 2em;
+    padding-right: 2em;
+}
+
+#skills-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+#tech-skills {
+    display: flex;
+    flex-direction: column;
+}
+.skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+/* #skills-container {
+    display: flex;
+} */
+.skill-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75em;
+    margin-bottom: 4px;
+}
+progress[value] {
+    -webkit-appearance: none;
+   appearance: none;
+    width: 430px;
+    height: 10px;
+  }
+  progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  progress[value]::-webkit-progress-value {
+      background: #6b63ff;
+      border-radius: 10px;
+  }
+
+.tools {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tool {
+    border: 1px solid #6b63ff;
+    padding: 5px;
+    font-size: 0.65em;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#soft-skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /* margin: 0 5% 10% 5%; */
+}
+.soft-skill {
+    margin: 0 5%;
+}
+.soft-skills-wrapper {
+    display: flex;
+}
+#soft-skills .round {
+    min-height: 255px;
+    margin-top: 30px;
+    position: relative;
+    z-index: -1;
+}
+#soft-skills .round strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: #212121;
+    font-weight: 100;
+}
+
+#profile-pic-wrapper {
+    justify-content: center;
+    width: 50%;
+}
+#profile-img {
+    border-radius: 50%;
+    border: 20px solid #cccc;
+    width: 50%;
+}
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+}
+#projects-wrapper {
+    display: flex;
+    width: 100%;
+    height: 70%;
+}
+.projects {
+    width: 33.3333%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+#proj-1{
+    background:#0f0c29;
+}
+.proj-img {
+    align-self: center;
+    width: 50%;
+    transition: 0.5s;
+    margin-bottom: 55px;
+}
+
+#idea-box {
+    background:#FF416C;
+  }
+
+  #ecommerce {
+      background: #396afc;
+  }
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .projects:hover img {
+      transform: scale(1.5);
+  }
+  #proj-1:hover {
+    background: rgba(14,12,41,0.8);
+  }
+  #idea-box:hover {
+    background: rgba(255,65,108,0.8);
+  }
+  #post-it-btn {
+      opacity: 0;
+      transition: opacity ease-in-out .5s;
+      background: #ff416b;
+  }
+  #ideabox-btn {
+      opacity: 0;
+      transition: opacity ease-in-out .5s;
+      background:#0f0c29;
+  }
+  .view-btn {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: .7em;
+    font-size: .7em;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+
+  .projects:hover #post-it-btn {
+      opacity: 1;
+  }
+  .projects:hover #ideabox-btn {
+    opacity: 1;
+}
+
+#connect {
+    display: flex;
+    flex-direction: column;
+}
+
+#connect-wrapper {
+    margin: 3% auto;
+}
+#connect-wrapper a {
+    margin-right: .5em;
+    color: #000;
+}
+
+  @media only screen and (max-width: 600px) {
+      body {
+        margin: 0;
+        overflow-x: hidden;
+        width: 100%;
+      }
+      header label {
+        display: inline-block;
+        color:#000;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+      }
+      header ul li {
+        display: block;
+      }
+      header .nav {
+        display: none;
+        transform: translateY(-100%);
+        transition: transform .6s;
+      }
+      header input:checked ~ ul {
+        display: block;
+        padding: 0 5px;
+        transform: translateY(0);
+      }
+      #home {
+          display: flex;
+          flex-direction: column;
+      }
+      #hello {
+          align-self: center;
+      }
+      #profile-pic-wrapper {
+          order: 1;
+      }
+      #profile-img {
+        width: 100%;
+      }
+      #details {
+          order: 2;
+          margin-top: 5%;
+      }
+      #about-me-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      #skills-container {
+          display: flex;
+          flex-direction: column;
+      }
+      .soft-skills-wrapper  {
+          display: flex;
+          flex-direction: column;
+      }
+      #skills {
+          margin-top:25%; 
+          height: auto;
+      }
+      progress[value] {
+        width: 270px;
+      }
+      #projects-wrapper {
+          display: flex;
+          flex-direction: column;
+      }
+      .projects {
+          width: 100%;
+      }
+      #portfolio {
+          height: 100%;
+      }
+      .section {
+          height: 100%;
+      }
+  }
