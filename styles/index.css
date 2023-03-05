@@ -101,6 +101,8 @@ nav {
 #connect {
     display: flex;
     flex-direction: column;
+    position: fixed;
+    bottom: 10px;
 }
 
 #connect-wrapper {
@@ -122,3 +124,82 @@ nav {
     background: #2e2e2e;
     margin: 20px auto;
   }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      width: 100%;
+    }
+    header label {
+      display: inline-block;
+      color:#000;
+      font-style: normal;
+      font-size: 1.2em;
+      padding: 10px;
+    }
+    header ul li {
+      display: block;
+    }
+    header .nav {
+      display: none;
+      transform: translateY(-100%);
+      transition: transform .6s;
+    }
+    header input:checked ~ ul {
+      display: block;
+      padding: 0 5px;
+      transform: translateY(0);
+    }
+    #home {
+        display: flex;
+        flex-direction: column;
+    }
+    #hello {
+        align-self: center;
+    }
+    #profile-pic-wrapper {
+        order: 1;
+    }
+    #profile-img {
+      width: 100%;
+    }
+    #details {
+        order: 2;
+        margin-top: 5%;
+    }
+    #about-me-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skills-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .soft-skills-wrapper  {
+        display: flex;
+        flex-direction: column;
+    }
+    #skills {
+        margin-top:25%; 
+        height: auto;
+    }
+    progress[value] {
+      width: 270px;
+    }
+    #projects-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .projects {
+        width: 100%;
+    }
+    #portfolio {
+        height: 100%;
+    }
+    .section {
+        height: 100%;
+    }
+}
