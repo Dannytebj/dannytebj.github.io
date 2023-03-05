@@ -7,195 +7,59 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Daniel Atebije</title>
+    <title>Daniel Atebije - Software Engineer</title>
 </head>
 <body>
 
     <header>
-        <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger"/>
-
-        <ul class="nav" id="nav-bar">
-            <li class="nav-links active" id="nav-home"><a href="#home">Home</a></li>
-            <li class="nav-links" id="nav-about"><a href="#about">About</a></li>
-            <li class="nav-links" id="nav-skills"><a href="#skills">Skills</a></li>
-            <li class="nav-links" id="nav-portfolio"><a href="#portfolio">Portfolio</a></li>
-            <li class="nav-links" id="nav-contact"><a href="#connect">Connect</a></li>
-        </ul>
+      <div>
+        Daniel Atebije
+      </div>
     </header>
-
-    <div class="content" id="content-wrapper">
-        <div id="home" class="section">
-            <div id="details">
-                <div id="hello"> <span> Hello, I'm</span></div>
-                <div id="title" class="detail">
-                    <div id="name">Daniel Atebije</div>
-                    <div id="occupation">Software Engineer</div>
-                </div>
-                <div id="email-addr" class="detail other-info">
-                        <i class="fa fa-envelope"></i>
-                        <span class="detail-val">dannytebj@gmail.com</span></div>
-                <div id="phone-number" class="detail"> 
-                        <i class="fa fa-phone"></i>
-                        <span class="detail-val">(+234) 805 114 7502, 902 717 3500</span>
-                </div>
-                <div id="address" class="detail">
-                    <i class="fa fa-map-marker"></i>
-                    <span class="detail-val">235 Ikorodu Road, Lagos</span>
-                </div>
-                <div id="socials" class="detail"></div>
-            </div>
-
-            <div id="profile-pic-wrapper">
-                <div id="inner-div">
-                    <img id="profile-img" src="./img/1.JPG" />
-                </div>
-            </div>
-        </div>
-
-        <div id="about" class="section">
-            <div id="about-me-wrapper">
-                <div id="svg-wrapper">
-                    <img id="coder" src="./img/coder.svg" alt="Coder" />
-                </div>
-                <div id="about-me-details">
-                    <h1>About Me</h1>
-                    <p id="about-me">Hey! I'm Danny, a Software Developer with 3 years of industry experience in web and mobile development. 
-                        I have strong experience working with the following tools;
-                    </p>
-                    <div class="tools">
-                        <div class="tool">Javascript</div>
-                        <div class="tool">Typescript</div>
-                        <div class="tool">Node.JS</div>
-                        <div class="tool">PHP</div>
-                        <div class="tool">React</div>
-                        <div class="tool">React-Native</div>
-                        <div class="tool">Angular 2^</div>
-                        <div class="tool">MySQL</div>
-                        <div class="tool">PostgreSQL</div>
-                        <div class="tool">GraphQL</div>
-                        <div class="tool">Firebase</div>
-                        <div class="tool">MongoDb</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="skills" class="section">
-            <h1 style="text-align: center;">Skills</h1>
-            <div id="skills-container">
-                <div id="tech-skills">
-                    <h3>Top Tech Skills</h2>
+  <nav>
+    <ul class="nav-wrapper">
+      <li class="nav-item">about</li>
+      <li class="nav-item">portfolio</li>
+      <li class="nav-item">connect</li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <div class="leading-content">
+      <h2 id="hey">Hey! I'm Danny, </h2>
+       <p id="about-me"> I am a software engineer with over 4 years of hands-on experience working with Javascript and other modern technologies to develop web and mobile applications. </p> 
+      <p id="about-me">     
+   I am constructive, self-motivated, and a committed individual who is quick to learn, and passionate about adding value. I am keen on building products that people love and are accessible for everyone. A summary of my experience can be found  <a href="https://docs.google.com/document/d/e/2PACX-1vQ3K9_kCqJRG12rOBFm4OjgjSv2vnMuVQgfU-KAjHxhauFo6lTk7pRdPqbK66ILrX3o4RSO9uojS0I9/pub"> here </a>
+      
+         </p>
+      
+    </div>
     
-                    <div class="skill-wrapper">
-                        <div class="skill-labels">
-                            <span id="skill-name">Javascript</span>
-                            <span>80%</span>
-                        </div>
-                        <progress max="100" value="80"></progress> 
-                    </div>
-
-                  <div class="skill-wrapper">
-                      <div class="skill-labels">
-                          <span id="skill-name">Node</span>
-                          <span>85%</span>
-                      </div>
-                      <progress max="100" value="85"></progress> 
-                  </div>
-
-                    <div class="skill-wrapper">
-                        <div class="skill-labels">
-                            <span id="skill-name">Typescript</span>
-                            <span>50%</span>
-                        </div>
-                        <progress max="100" value="50"></progress> 
-                    </div>
-
-                    <div class="skill-wrapper">
-                      <div class="skill-labels">
-                          <span id="skill-name">React</span>
-                          <span>75%</span>
-                      </div>
-                      <progress max="100" value="75"></progress> 
-                  </div>
-
-                <div class="skill-wrapper">
-                    <div class="skill-labels">
-                        <span id="skill-name">React-Native</span>
-                        <span>65%</span>
-                    </div>
-                    <progress max="100" value="65"></progress> 
-                </div>
-
-                    <div class="skill-wrapper">
-                        <div class="skill-labels">
-                            <span id="skill-name">PHP</span>
-                            <span>48%</span>
-                        </div>
-                        <progress max="100" value="48"></progress> 
-                    </div>
-
-                    <div class="skill-wrapper">
-                        <div class="skill-labels">
-                            <span id="skill-name">Angular 2^</span>
-                            <span>55%</span>
-                        </div>
-                        <progress max="100" value="55"></progress> 
-                    </div>
-                </div>
-    
-                <div id="soft-skills">
-                    <h3>Soft Skills</h3>
-                    <div class="soft-skills-wrapper">
-                        <div class="soft-skill">
-                            <div class="round"
-                                data-value="0.87"
-                                data-size="200"
-                                data-thickness="6">
-                                <strong></strong>
-                            </div>
-                            <span style="text-align: center;">Attention to Details</span>
-                        </div>
-                        <div class="soft-skill">
-                            <div class="round"
-                                data-value="0.85"
-                                data-size="200"
-                                data-thickness="6">
-                                <strong></strong>
-                            </div>
-                            <span style="text-align: center;">Team work</span>
-                        </div>
-                        <div class="soft-skill">
-                            <div class="round"
-                                data-value="0.90"
-                                data-size="200"
-                                data-thickness="6">
-                                <strong></strong>
-                            </div>
-                            <span style="text-align: center;">Communication</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        
-        <div id="portfolio" >
+            <div id="portfolio">
             <h1 style="text-align: center;">Portfolio</h1>
             <div id="projects-wrapper">
-                <div class="projects" id="proj-1">
-                    <img src="./img/post-it-inverted.png" id="post-it" class="proj-img" />
-                    <a href="https://post-it-v2.herokuapp.com" id="post-it-btn" class="view-btn">View Project</a>
+                <div class="projects">
+                    <h3 class="project-title">Ideabox</h3>
+                    Ideabox is a simple application that allows users to create a pool of ideas and promote collaboration.
+     
+                    <a href="https://github.com/Dannytebj/IdeaBox" class="view-btn">View Project</a>
                 </div>
-                <div class="projects" id="idea-box">
-                    <img src="./img/ideabox_logo-inverted.png" id="idea-box-img" class="proj-img" />
-                    <a href="https://ideaboxbydanny.herokuapp.com/" id="ideabox-btn" class="view-btn">View Project</a>
-
+              
+                  <div class="projects">
+                    <h3 class="project-title">Post-it</h3>
+                   PostIt is a simple application that allows friends and colleagues create groups for notifications. This way one person can post notifications to everyone by sending a message once.
+     
+                    <a href="https://github.com/Dannytebj/post-it-app" class="view-btn">View Project</a>
                 </div>
-                <div class="projects" id="ecommerce">
-                        <img src="./img/shopmate.png" id="shopmate-img" class="proj-img" />
-                        <a href="https://tshirtshopbydanny.herokuapp.com/" id="ideabox-btn" class="view-btn">View Project</a>
+              
+                             <div class="projects">
+                    <h3 class="project-title">T-shirt shop</h3>
+                   This project is the frontend implemetation for an imaginary ecommerce store (tshirtShop) :). The backend implementation can be found <a href="https://github.com/Dannytebj/ecommerce">here</a>
+     
+                    <a href="https://github.com/Dannytebj/ecommerce-fe" class="view-btn">View Project</a>
                 </div>
+            
+              
             </div>
         </div>
         
@@ -207,94 +71,8 @@
             </div>
 
         </div>
-    </div>
+    
+  </div>
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js'></script>
-
-
-
-    <script>
-        /** 
-         * JAVASCRIPT METHOD FOR SETTING ACTIVE
-         * NAV LINK ELEMENT
-        */
-            (function () {
-                const navLinks = document.getElementsByClassName('nav-links');
-
-                for (let i = 0; i < navLinks.length; i++) {
-                    navLinks[i].addEventListener('click', function () {
-                        let currentItem = document.getElementsByClassName('active');
-                        currentItem[0].className = currentItem[0].className.replace(' active', '');
-                        this.className += ' active';
-                    });
-                }
-            })();
-
-        /* Code By Webdevtrick ( https://webdevtrick.com ) 
-        *  JS for Circular range
-        */
-        (function (){
-        $('.round').circleProgress({fill: {color: '#6b63ff'}})
-            .on('circle-animation-progress', function(event, progress, stepValue){
-                $(this).find('strong').text(String(stepValue.toFixed(2)).substr(2)+'%');
-                });  
-        })();
-       /*
-       * close hambugger menu
-       */ 
-        (function(){
-            const everywhere= document.getElementById('content-wrapper');
-            const except = document.getElementsByTagName('header');
-            const hambugger = document.getElementById('hamburger');
-            const windowWidth = $(window).width();
-
-            $('input:checkbox').change(function () {
-                if(hambugger.checked && (windowWidth < 600)) {
-                everywhere.addEventListener('click', function(ev) {
-                    hambugger.checked = false;
-                }, false);
-                }
-            });
-        })();
-
-
-    /** 
-     * JQUERY FOR SMOOTH SCROLL
-    */
-    $(document).ready(function() {
-        $('a').on('click', function(event) {
-            if (this.hash !== '') {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 150, function(){
-                    window.location.hash = hash;
-                })
-            }
-        })
-    })        
-
-    // HEADER JS
-    window.onscroll = function () { 
-        stickyHeader();
-        }
-
-
-    var myheader = document.getElementById("nav-bar");
-
-    // Get the offset position of the navbar
-    var sticky = myheader.offsetTop;
-    function stickyHeader() {
-        if (window.pageYOffset > sticky) {
-            myheader.classList.add("sticky");
-        } else {
-            myheader.classList.remove("sticky");
-        }
-    }
-    </script>
 </body>
 </html>
