@@ -56,13 +56,12 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 75%;
   margin: auto;
 }
 
 .leading-content {
   border: 1px solid #2e2e2e;
-  width: 70%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   border-radius: 20px;
@@ -78,11 +77,10 @@ nav {
     flex-direction: column;
     height: 400px;
     margin-top: 3%;
-/*    border: 1px solid #000; */
 }
 #projects-wrapper {
     display: flex;
-/*     width: 50%; */
+    width: 60%;
     margin: auto;
 }
 
@@ -92,11 +90,11 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-/*     border: 1px solid #000; */
     margin-right: 15px;
     border-radius: 20px;
   padding: 25px;
   background: #1b1b1b;
+  line-height: 1.5;
 
 }
 
@@ -109,7 +107,6 @@ nav {
 
 #connect-wrapper {
     margin: 3% auto;
-    padding-bottom: 100px;
 }
 #connect-wrapper a {
     margin-right: .5em;
@@ -132,6 +129,9 @@ nav {
       margin: 0;
       overflow-x: hidden;
       width: 100%;
+    }
+    .container {
+        width: 75%;
     }
     header label {
       display: inline-block;
@@ -156,6 +156,9 @@ nav {
     #home {
         display: flex;
         flex-direction: column;
+    }
+    .leading-content {
+        width: 70%;
     }
     #hello {
         align-self: center;
@@ -194,14 +197,21 @@ nav {
     #projects-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        width: 80px;
     }
     .projects {
-        width: 100%;
+        width: 75%;
+        margin-bottom: 20px;
     }
     #portfolio {
         height: 100%;
+        margin-bottom: 70px;
     }
     .section {
         height: 100%;
+    }
+    #connect {
+        position: relative;
     }
 }
