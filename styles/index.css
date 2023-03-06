@@ -130,9 +130,6 @@ nav {
       overflow-x: hidden;
       width: 100%;
     }
-    .container {
-        width: 75%;
-    }
     header label {
       display: inline-block;
       color:#000;
@@ -198,7 +195,6 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80px;
     }
     .projects {
         width: 75%;
