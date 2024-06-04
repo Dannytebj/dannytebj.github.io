@@ -455,8 +455,8 @@
 }
 
 .brand .n-logo {
-  max-width: 100px;
-  margin-bottom: 40px;
+  max-width: 140px;
+  margin-bottom: 10px;
 }
 
 .invision-logo {
@@ -525,6 +525,9 @@
   float: none !important;
 }
 
+.section-contact-us {
+  background: inherit;
+}
 @media screen and (max-width: 991px) {
   .section-navbars .navbar-collapse {
     display: none !important;
