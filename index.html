@@ -98,6 +98,16 @@
               <a
                 class="nav-link"
                 href="javascript:void(0)"
+                onclick="scrollToSection('.section-services')"
+              >
+                <i class="now-ui-icons business_badge"></i>
+                <p>Our Services</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0)"
                 onclick="scrollToSection('.section-contact-us')"
               >
                 <i class="now-ui-icons ui-1_email-85"></i>
@@ -293,6 +303,64 @@
           </div>
         </div>
 
+        <div class="section section-services">
+          <div class="container" style="padding: 0 10%;">
+            <div class="row justify-content-md-center">
+              <div class="col-md-12 col-lg-8">
+                <h2 class="title text-center">Our Services</h2>
+              </div>
+            </div>
+
+            <div id="accordion" role="tablist" aria-multiselectable="true" class="card-collapse">
+              <div class="card card-plain">
+                <div class="card-header accor-item" role="tab" id="headingOne">
+                    <a class="accor-item-a" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <h6 class="accor-item-desc">Business and Domestic Software Development</h6>
+                      <i class="now-ui-icons arrows-1_minimal-down"></i>
+                    </a>
+                </div>
+            
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-body">
+                    <h5>At Pistis Innovations, we specialize in developing customized software solutions for both business and domestic needs. We use the latest technologies and methodologies to ensure your software is scalable, secure, and efficient. <br /> <br />Our expertise includes:</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item list-group-item-light"><b>Custom Software Development:</b> Tailored solutions that meet the specific needs of your business or household </li>
+                      <li class="list-group-item list-group-item-light"><b>Mobile App Development:</b> Creating user-friendly, feature-rich mobile applications for Android and iOS </li>
+                      <li class="list-group-item list-group-item-light"><b>Web Development:</b> Building responsive, high-performance websites that offer seamless user experiences</li>
+                      <li class="list-group-item list-group-item-light"><b>Software Maintenance and Support:</b> Providing ongoing support and maintenance to ensure your software remains up-to-date and functional.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-plain">
+                <div class="card-header accor-item" role="tab" id="headingTwo">
+                    <a class="accor-item-a" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                      <h6 class="accor-item-desc">Information Technology Consultancy</h6>
+                      <i class="now-ui-icons arrows-1_minimal-down"></i>
+                    </a>
+                </div>
+            
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body">
+                    <h5>Our IT consultancy services are designed to help you make the most of your technology investments. Our consultants are experienced professionals who stay up-to-date with the latest industry trends and best practices. <br /> <br />We offer:</h5>
+                    <ul class="list-group">
+                      <li class="list-group-item list-group-item-light"><b>Strategic IT Planning:</b> Helping you align your IT strategy with your business goals.</li>
+                      <li class="list-group-item list-group-item-light"><b>Technology Assessments: </b> Evaluating your current IT infrastructure and recommending improvements. </li>
+                      <li class="list-group-item list-group-item-light"><b>Project Management: </b> Overseeing IT projects from conception to completion, ensuring they are delivered on time and within budget.</li>
+                      <li class="list-group-item list-group-item-light"><b>Cybersecurity Services: </b> Protecting your business from cyber threats with comprehensive security solutions.</li>
+                      <li class="list-group-item list-group-item-light"><b>Cloud Services: </b> Assisting with cloud strategy, migration, and management to optimize your IT environment.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
         <div
           class=""
           style="
@@ -301,21 +369,7 @@
             background-position: top center;
             min-height: 300px;
           "
-        >
-
-          <!-- <div class="container">
-            <div class="row">
-              <div class="card card-contact-us bg-black">
-                <div class="description" style="padding: 30px 20px; color: white; text-align: center;">
-                  <h5>We'd love to hear from you! <br/> 
-                    Whether you have a question about our services, need support, <br /> or want to discuss a potential project, our team is here to help. Send us an email at</h5>
-                  <h5 style="text-align: center;"><b>pistisinnovations@gmail.com</b></h5>
-                </div>
-              </div>
-            </div>
-
-          </div> -->
-        </div>
+        ></div>
  
         <div
           class="section section-download"
@@ -337,32 +391,6 @@
                     <h5 style="text-align: center;">PISTIS INNOVATIONS LIMITED</h5>
                     <p class="description">85 Great Portland Street, First Floor, London, W1W 7LT</p>
                   </div>
-
-
-                  <!-- <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
-                    <div class="input-group input-lg">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="now-ui-icons users_circle-08"></i>
-                        </span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="First Name...">
-                    </div>
-                    <div class="input-group input-lg">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="now-ui-icons ui-1_email-85"></i>
-                        </span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Email...">
-                    </div>
-                    <div class="textarea-container">
-                      <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type a message..."></textarea>
-                    </div>
-                    <div class="send-button">
-                      <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
-                    </div>
-                  </div> -->
                 </div>
               </div>
             </div>

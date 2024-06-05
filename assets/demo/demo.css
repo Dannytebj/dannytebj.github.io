@@ -528,6 +528,28 @@
 .section-contact-us {
   background: inherit;
 }
+.accor-item {
+  background: black !important;
+}
+
+.accor-item-a {
+  display: flex;
+  align-items: center;
+  padding: 20px 10px;
+  color: #FFFFFF;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: #FFFFFF;
+  }
+}
+
+.accor-item-desc {
+  width: 95%;
+}
 @media screen and (max-width: 991px) {
   .section-navbars .navbar-collapse {
     display: none !important;
